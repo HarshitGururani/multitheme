@@ -78,14 +78,14 @@ src/
 - **Spacing**: Compact 1rem spacing
 
 ### Theme 2 - Dark
-![Theme 2 - Dark](images/theme2.png)
+<img src="images/theme2.png" alt="Theme 2 - Dark" style="height: 80%; width: auto;" />
 - **Colors**: Dark background with purple accents
 - **Layout**: Sidebar layout with category navigation
 - **Typography**: Georgia serif font
 - **Spacing**: Comfortable 1.5rem spacing
 
 ### Theme 3 - Colorful
-![Theme 3 - Colorful](images/theme3.png)
+<img src="images/theme3.png" alt="Theme 3 - Colorful" style="height: 80%; width: auto;" />
 - **Colors**: Vibrant yellow background with pink accents
 - **Layout**: Card-based grid layout with hover effects
 - **Typography**: Pacifico cursive font
