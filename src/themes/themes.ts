@@ -47,19 +47,21 @@ export const themes: Record<string, Theme> = {
     },
   },
 
+ 
   theme3: {
     id: 'theme3',
     name: 'Theme 3',
     colors: {
-      primary: '#E91E63',      // Deep Pink
-      secondary: '#FF5722',    // Red Orange
-      background: '#FFF0F5',   // Lavender Blush
-      surface: '#FFE4E1',      // Misty Rose
-      text: '#2E2E2E',         // Dark Gray
-      textSecondary: '#757575',// Gray
-      accent: '#4CAF50',       // Green
-      border: '#FFCDD2',       // Light Pink
-      textGradient: 'linear-gradient(135deg, #9C27B0 0%, #E91E63 50%, #FF5722 100%)', // Softer purple to pink gradient
+      primary: '#E91E63',        // Deep Pink
+      secondary: '#FF5722',      // Red Orange
+      background: '#FFF0F5',     // Lavender Blush
+      surface: '#FFFFFF',        // White Cards (improved contrast)
+      text: '#2E2E2E',           // Dark Gray Text
+      textSecondary: '#757575',  // Gray
+      accent: '#4CAF50',         // Green Accent
+      border: '#F8BBD0',         // Light Pink Border
+      textGradient:
+        'linear-gradient(135deg, #9C27B0 0%, #E91E63 50%, #FF5722 100%)', // Gradient Heading
     },
     fonts: {
       heading: 'Pacifico, cursive',
@@ -69,5 +71,5 @@ export const themes: Record<string, Theme> = {
       type: 'card-grid',
       spacing: '2rem',
     },
-  }
+  },
 };
