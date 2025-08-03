@@ -71,18 +71,21 @@ src/
 ## 🎯 Theme Details
 
 ### Theme 1 - Minimal
+![Theme 1 - Minimal](images/theme1.png)
 - **Colors**: Light background with blue accents
 - **Layout**: Clean, minimal design with horizontal product cards
 - **Typography**: Inter font family
 - **Spacing**: Compact 1rem spacing
 
 ### Theme 2 - Dark
+![Theme 2 - Dark](images/theme2.png)
 - **Colors**: Dark background with purple accents
 - **Layout**: Sidebar layout with category navigation
 - **Typography**: Georgia serif font
 - **Spacing**: Comfortable 1.5rem spacing
 
 ### Theme 3 - Colorful
+![Theme 3 - Colorful](images/theme3.png)
 - **Colors**: Vibrant yellow background with pink accents
 - **Layout**: Card-based grid layout with hover effects
 - **Typography**: Pacifico cursive font
