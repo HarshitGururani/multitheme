@@ -71,7 +71,7 @@ src/
 ## 🎯 Theme Details
 
 ### Theme 1 - Minimal
-![Theme 1 - Minimal](images/theme1.png)
+<img src="images/theme1.png" alt="Theme 1 - Minimal" style="height: 80%; width: auto;" />
 - **Colors**: Light background with blue accents
 - **Layout**: Clean, minimal design with horizontal product cards
 - **Typography**: Inter font family
