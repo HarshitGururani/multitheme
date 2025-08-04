@@ -145,13 +145,13 @@ const ProductPage: React.FC = () => {
            <div className="flex justify-center">
              {/* Main Image */}
              <div 
-               className="aspect-square rounded-2xl overflow-hidden shadow-lg w-full h-1/2"
+               className="aspect-square rounded-2xl overflow-hidden shadow-lg w-full max-w-md mx-auto"
                style={{ backgroundColor: theme.colors.surface }}
              >
               <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-contain "
+                  className="w-full h-full object-contain"
                 />
              </div>
            </div>
