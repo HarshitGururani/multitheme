@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from "../contexts/ThemeContext";
+import { Link } from 'react-router-dom';
 import type { Product } from '../types/product';
 
 interface CardGridLayoutProps {
@@ -12,9 +13,10 @@ const CardGridLayout: React.FC<CardGridLayoutProps> = ({ products }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
       {products.map((product) => (
-        <div
+        <Link
           key={product.id}
-          className="group relative overflow-hidden rounded-lg sm:rounded-xl transition-all duration-200 hover:scale-101 hover:shadow-md"
+          to={`/product/${product.id}`}
+          className="group relative overflow-hidden rounded-lg sm:rounded-xl transition-all duration-200 hover:scale-101 hover:shadow-md cursor-pointer"
           style={{
             backgroundColor: theme.colors.surface,
             border: `1px solid ${theme.colors.border}`,
@@ -74,7 +76,7 @@ const CardGridLayout: React.FC<CardGridLayoutProps> = ({ products }) => {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

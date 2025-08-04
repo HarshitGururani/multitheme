@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from "../contexts/ThemeContext";
+import { Link } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa';
 import type { Product } from '../types/product';
 
@@ -167,9 +168,10 @@ const SidebarLayout: React.FC<SidebarLayoutProps> = ({ products }) => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {filteredProducts.map((product) => (
-            <div
+            <Link
               key={product.id}
-              className="p-4 rounded-lg transition-all duration-300 hover:shadow-lg"
+              to={`/product/${product.id}`}
+              className="p-4 rounded-lg transition-all duration-300 hover:shadow-lg cursor-pointer"
               style={{
                 backgroundColor: theme.colors.surface,
                 border: `1px solid ${theme.colors.border}`,
@@ -210,7 +212,7 @@ const SidebarLayout: React.FC<SidebarLayoutProps> = ({ products }) => {
                   ⭐ {product.rating.rate}
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </main>

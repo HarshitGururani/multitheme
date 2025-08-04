@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from "../contexts/ThemeContext";
+import { Link } from 'react-router-dom';
 import { FaStar } from 'react-icons/fa';
 import type { Product } from '../types/product';
 
@@ -14,8 +15,9 @@ const MinimalLayout: React.FC<MinimalLayoutProps> = ({ products }) => {
     <div className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8">
       <div className="space-y-4">
         {products.map((product) => (
-          <article
+          <Link
             key={product.id}
+            to={`/product/${product.id}`}
             className="flex items-start space-x-4 sm:space-x-6 p-4 sm:p-6 rounded-xl 
                        transition-all duration-300 hover:shadow-lg hover:shadow-black/5 
                        hover:-translate-y-0.5 cursor-pointer group border-0"
@@ -136,7 +138,7 @@ const MinimalLayout: React.FC<MinimalLayoutProps> = ({ products }) => {
                 />
               </svg>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
     </div>      
